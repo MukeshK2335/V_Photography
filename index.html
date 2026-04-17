@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Photography | Luxury Photography Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="Favicon.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="grain-overlay"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="LOGO.png" alt="V Photography Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="hero-image" style="background-image: url('https://picsum.photos/1920/1080?random=10')"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="hero-social">
+                        <a href="#">Instagram</a>
+                        <a href="#">Pinterest</a>
+                        <a href="#">Vimeo</a>
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <h1 class="reveal-text">V <span>Photography</span></h1>
+                    <h2 class="hero-tagline">We Capture <em>Forever</em></h2>
+                    <p class="hero-description">Cinematic storytelling for the moments that define your legacy. Specializing in luxury weddings and editorial portraits.</p>
+                    <div class="hero-btns">
+                        <a href="#portfolio" class="cta-button">The Portfolio</a>
+                        <a href="#contact" class="cta-secondary">Inquire Now</a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="scroll-indicator">
+                        <span>Scroll</span>
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <img src="https://picsum.photos/800/1000?random=11" alt="Editorial Portrait">
+                    </div>
+                    <div class="about-text reveal">
+                        <span class="section-subtitle">Our Story</span>
+                        <h2 class="section-title">Defining Cinematic Moments</h2>
+                        <div class="gold-divider"></div>
+                        <p>V Photography was born out of a passion for visual storytelling and the pursuit of timeless elegance. We specialize in editorial-style photography that captures the raw emotion and sophisticated beauty of life's most significant events.</p>
+                        <p>With over a decade of experience in high-end fashion and luxury events, our approach is discreet, artistic, and deeply personal. We don't just take pictures; we craft visual narratives that stand the test of time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">What We Do</span>
+                    <h2 class="section-title">Exquisite Services</h2>
+                </div>
+                <div class="services-grid reveal">
+                    <div class="service-card">
+                        <i class="fa-solid fa-rings-wedding"></i>
+                        <h3>Wedding Photography</h3>
+                        <p>Timeless coverage of your most precious day, blending editorial style with candid moments.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-camera-retro"></i>
+                        <h3>Engagement Shoots</h3>
+                        <p>Intimate sessions that celebrate your unique connection before the big day.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-church"></i>
+                        <h3>Ceremony & Religious</h3>
+                        <p>Respectful and artistic documentation of sacred rituals and family traditions.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <h3>Corporate Events</h3>
+                        <p>Sophisticated coverage for high-end galas, product launches, and corporate retreats.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <h3>Birthday & Celebrations</h3>
+                        <p>Vibrant photography for milestones that deserve to be remembered in style.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Portrait Sessions</h3>
+                        <p>High-end editorial portraits for individuals, families, and professionals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Selected Works</h2>
+                </div>
+                <div class="filter-buttons reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wedding">Weddings</button>
+                    <button class="filter-btn" data-filter="ceremony">Ceremonies</button>
+                    <button class="filter-btn" data-filter="event">Events</button>
+                    <button class="filter-btn" data-filter="portrait">Portraits</button>
+                </div>
+                <div class="portfolio-grid reveal">
+                    <!-- Wedding -->
+                    <div class="portfolio-item wedding">
+                        <img src="https://picsum.photos/600/800?random=20" alt="Wedding">
+                        <div class="portfolio-overlay">
+                            <span>Wedding</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item portrait">
+                        <img src="https://picsum.photos/600/400?random=21" alt="Portrait">
+                        <div class="portfolio-overlay">
+                            <span>Portrait</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wedding">
+                        <img src="https://picsum.photos/600/600?random=22" alt="Wedding">
+                        <div class="portfolio-overlay">
+                            <span>Wedding</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item event">
+                        <img src="https://picsum.photos/600/900?random=23" alt="Event">
+                        <div class="portfolio-overlay">
+                            <span>Event</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item ceremony">
+                        <img src="https://picsum.photos/600/700?random=24" alt="Ceremony">
+                        <div class="portfolio-overlay">
+                            <span>Ceremony</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item portrait">
+                        <img src="https://picsum.photos/600/800?random=25" alt="Portrait">
+                        <div class="portfolio-overlay">
+                            <span>Portrait</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid reveal">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="500">0</h3>
+                        <p>Weddings Captured</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="10">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="1200">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">Kind Words</span>
+                    <h2 class="section-title">Client Love</h2>
+                </div>
+                <div class="testimonials-slider reveal">
+                    <div class="testimonial-track">
+                        <div class="testimonial-slide active">
+                            <div class="stars">★★★★★</div>
+                            <p>"V Photography captured our wedding day with such elegance and grace. The photos look like they're straight out of a high-end magazine. Truly breathtaking work."</p>
+                            <span class="client-name">Eleanor & James</span>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <p>"The most professional team we've ever worked with. They managed to capture the smallest details that we didn't even notice. We're forever grateful for these memories."</p>
+                            <span class="client-name">Michael Vance</span>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="stars">★★★★★</div>
+                            <p>"Exceptional eye for detail and lighting. Our corporate gala photos were exactly what we needed to elevate our brand image. Highly recommend!"</p>
+                            <span class="client-name">Sarah Jenkins, CEO</span>
+                        </div>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-grid reveal">
+                    <div class="contact-info">
+                        <span class="section-subtitle">Contact</span>
+                        <h2 class="section-title">Let's Create Magic</h2>
+                        <p>Ready to capture your forever? Get in touch to discuss your upcoming event or session.</p>
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>hello@vphotography.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+1 (555) 987-6543</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Manhattan, New York</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <select name="event-type" required>
+                                        <option value="" disabled selected>Event Type</option>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="engagement">Engagement</option>
+                                        <option value="ceremony">Ceremony</option>
+                                        <option value="corporate">Corporate</option>
+                                        <option value="portrait">Portrait</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" name="event-date" placeholder="Event Date">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo footer-logo">
+                    <img src="LOGO.png" alt="V Photography Logo" class="logo-img">
+                </a>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-vimeo"></i></a>
+                </div>
+                <p class="copyright">&copy; 2024 V Photography. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
