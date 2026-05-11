@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V Photography | Luxury Photography Portfolio</title>
+    <title>V Photography | Portfolio</title>
     <link rel="icon" type="image/jpeg" href="Favicon.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +76,7 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-image reveal">
-                        <img src="https://picsum.photos/800/1000?random=11" alt="Editorial Portrait">
+                        <img src="VEN02124.JPG" alt="Editorial Portrait" loading="lazy">
                     </div>
                     <div class="about-text reveal">
                         <span class="section-subtitle">Our Story</span>
@@ -98,19 +98,19 @@
                 </div>
                 <div class="services-grid reveal">
                     <div class="service-card">
-                        <i class="fa-solid fa-rings-wedding"></i>
+                        <i class="fa-solid fa-camera-retro"></i>
                         <h3>Wedding Photography</h3>
                         <p>Timeless coverage of your most precious day, blending editorial style with candid moments.</p>
                     </div>
                     <div class="service-card">
-                        <i class="fa-solid fa-camera-retro"></i>
-                        <h3>Engagement Shoots</h3>
-                        <p>Intimate sessions that celebrate your unique connection before the big day.</p>
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <h3>Birthday PhotoShoot</h3>
+                        <p>Capturing the joy and celebration of your special milestones with vibrant photography.</p>
                     </div>
                     <div class="service-card">
-                        <i class="fa-solid fa-church"></i>
-                        <h3>Ceremony & Religious</h3>
-                        <p>Respectful and artistic documentation of sacred rituals and family traditions.</p>
+                        <i class="fa-solid fa-baby-carriage"></i>
+                        <h3>Baby shower</h3>
+                        <p>Documenting the beautiful beginning of a new journey with gentle and artistic shots.</p>
                     </div>
                     <div class="service-card">
                         <i class="fa-solid fa-champagne-glasses"></i>
@@ -118,14 +118,14 @@
                         <p>Sophisticated coverage for high-end galas, product launches, and corporate retreats.</p>
                     </div>
                     <div class="service-card">
-                        <i class="fa-solid fa-cake-candles"></i>
-                        <h3>Birthday & Celebrations</h3>
-                        <p>Vibrant photography for milestones that deserve to be remembered in style.</p>
+                        <i class="fa-solid fa-user-tie"></i>
+                        <h3>Modeling Photo shoot</h3>
+                        <p>High-end editorial portraits and portfolio building for aspiring and professional models.</p>
                     </div>
                     <div class="service-card">
-                        <i class="fa-solid fa-user-tie"></i>
-                        <h3>Portrait Sessions</h3>
-                        <p>High-end editorial portraits for individuals, families, and professionals.</p>
+                        <i class="fa-solid fa-person-pregnant"></i>
+                        <h3>Pregnancy Photoshoot</h3>
+                        <p>Beautifully capturing the glow and anticipation of motherhood with elegant maternity portraits.</p>
                     </div>
                 </div>
             </div>
@@ -139,50 +139,14 @@
                     <h2 class="section-title">Selected Works</h2>
                 </div>
                 <div class="filter-buttons reveal">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="wedding">Weddings</button>
-                    <button class="filter-btn" data-filter="ceremony">Ceremonies</button>
-                    <button class="filter-btn" data-filter="event">Events</button>
-                    <button class="filter-btn" data-filter="portrait">Portraits</button>
+                    <button class="filter-btn active" data-filter="wedding">Wedding</button>
+                    <button class="filter-btn" data-filter="birthday">Birthday</button>
+                    <button class="filter-btn" data-filter="babyshower">Baby shower</button>
+                    <button class="filter-btn" data-filter="modeling">Modeling</button>
+                    <button class="filter-btn" data-filter="pregnancy">Pregnancy</button>
                 </div>
                 <div class="portfolio-grid reveal">
-                    <!-- Wedding -->
-                    <div class="portfolio-item wedding">
-                        <img src="https://picsum.photos/600/800?random=20" alt="Wedding">
-                        <div class="portfolio-overlay">
-                            <span>Wedding</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-item portrait">
-                        <img src="https://picsum.photos/600/400?random=21" alt="Portrait">
-                        <div class="portfolio-overlay">
-                            <span>Portrait</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-item wedding">
-                        <img src="https://picsum.photos/600/600?random=22" alt="Wedding">
-                        <div class="portfolio-overlay">
-                            <span>Wedding</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-item event">
-                        <img src="https://picsum.photos/600/900?random=23" alt="Event">
-                        <div class="portfolio-overlay">
-                            <span>Event</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-item ceremony">
-                        <img src="https://picsum.photos/600/700?random=24" alt="Ceremony">
-                        <div class="portfolio-overlay">
-                            <span>Ceremony</span>
-                        </div>
-                    </div>
-                    <div class="portfolio-item portrait">
-                        <img src="https://picsum.photos/600/800?random=25" alt="Portrait">
-                        <div class="portfolio-overlay">
-                            <span>Portrait</span>
-                        </div>
-                    </div>
+                    <!-- Dynamic Content Rendered via script.js -->
                 </div>
             </div>
         </section>
@@ -276,11 +240,12 @@
                                 <div class="form-group">
                                     <select name="event-type" required>
                                         <option value="" disabled selected>Event Type</option>
-                                        <option value="wedding">Wedding</option>
-                                        <option value="engagement">Engagement</option>
-                                        <option value="ceremony">Ceremony</option>
-                                        <option value="corporate">Corporate</option>
-                                        <option value="portrait">Portrait</option>
+                                        <option value="wedding">Wedding Photography</option>
+                                        <option value="birthday">Birthday PhotoShoot</option>
+                                        <option value="babyshower">Baby shower</option>
+                                        <option value="corporate">Corporate Events</option>
+                                        <option value="modeling">Modeling Photo shoot</option>
+                                        <option value="pregnancy">Pregnancy Photoshoot</option>
                                         <option value="other">Other</option>
                                     </select>
                                 </div>

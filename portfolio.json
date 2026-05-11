@@ -1,0 +1,40 @@
+[
+    { "category": "wedding", "image": "Marriage/KA401781.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/KA404341.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/KA407254.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/KA407276.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/KA407278.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/KA407299.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/VEN01712.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/VEN01715.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/VEN01802.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/VEN05975.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/_VEN4204.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/_VEN4438.JPG", "alt": "Wedding Photography" },
+    { "category": "wedding", "image": "Marriage/_VEN4784.JPG", "alt": "Wedding Photography" },
+    
+    { "category": "birthday", "image": "Birthday/_VEN8406.JPG", "alt": "Birthday PhotoShoot" },
+    { "category": "birthday", "image": "Birthday/_VEN8536.JPG", "alt": "Birthday PhotoShoot" },
+    { "category": "birthday", "image": "Birthday/_VEN8868.JPG", "alt": "Birthday PhotoShoot" },
+    { "category": "birthday", "image": "Birthday/_VEN8901.JPG", "alt": "Birthday PhotoShoot" },
+    { "category": "birthday", "image": "Birthday/_VEN9353.JPG", "alt": "Birthday PhotoShoot" },
+    { "category": "birthday", "image": "Birthday/_VEN9355.JPG", "alt": "Birthday PhotoShoot" },
+    
+    { "category": "babyshower", "image": "Baby Shower/VEN09466.JPG", "alt": "Baby shower" },
+    { "category": "babyshower", "image": "Baby Shower/VEN09467.JPG", "alt": "Baby shower" },
+    { "category": "babyshower", "image": "Baby Shower/_VEN4775.JPG", "alt": "Baby shower" },
+    { "category": "babyshower", "image": "Baby Shower/_VEN4810.JPG", "alt": "Baby shower" },
+    
+    { "category": "modeling", "image": "Model/VEN07779.JPG", "alt": "Modeling Photo shoot" },
+    { "category": "modeling", "image": "Model/VEN07787.JPG", "alt": "Modeling Photo shoot" },
+    { "category": "modeling", "image": "Model/VEN07811.JPG", "alt": "Modeling Photo shoot" },
+    { "category": "modeling", "image": "Model/VEN07816.JPG", "alt": "Modeling Photo shoot" },
+    { "category": "modeling", "image": "Model/VEN07853.JPG", "alt": "Modeling Photo shoot" },
+    { "category": "modeling", "image": "Model/VEN07897.JPG", "alt": "Modeling Photo shoot" },
+    
+    { "category": "pregnancy", "image": "Pregnancy/_VEN1263.JPG", "alt": "Pregnancy Photoshoot" },
+    { "category": "pregnancy", "image": "Pregnancy/_VEN1292.JPG", "alt": "Pregnancy Photoshoot" },
+    { "category": "pregnancy", "image": "Pregnancy/_VEN1308.JPG", "alt": "Pregnancy Photoshoot" },
+    { "category": "pregnancy", "image": "Pregnancy/_VEN4460.JPG", "alt": "Pregnancy Photoshoot" },
+    { "category": "pregnancy", "image": "Pregnancy/_VEN4466.JPG", "alt": "Pregnancy Photoshoot" }
+]

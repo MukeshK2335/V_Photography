@@ -35,33 +35,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // Portfolio Filtering
+    // Portfolio Data Loading
+    let portfolioData = [];
+    const portfolioGrid = document.querySelector('.portfolio-grid');
     const filterBtns = document.querySelectorAll('.filter-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
 
+    const renderPortfolio = (filter = 'all') => {
+        if (!portfolioGrid) return;
+        portfolioGrid.innerHTML = '';
+        
+        const filteredData = filter === 'all' 
+            ? portfolioData 
+            : portfolioData.filter(item => item.category === filter);
+
+        filteredData.forEach(item => {
+            const portfolioItem = document.createElement('div');
+            portfolioItem.className = `portfolio-item ${item.category} reveal active`;
+            portfolioItem.innerHTML = `
+                <img src="${item.image}" alt="${item.alt}" loading="lazy" class="lazy-image">
+                <div class="portfolio-overlay">
+                    <span>${item.alt}</span>
+                </div>
+            `;
+            portfolioGrid.appendChild(portfolioItem);
+
+            const img = portfolioItem.querySelector('img');
+            img.onload = () => {
+                img.classList.add('loaded');
+            };
+
+            portfolioItem.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            portfolioItem.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+    };
+
+    // Fetch and Initialize Portfolio
+    fetch('portfolio.json')
+        .then(response => response.json())
+        .then(data => {
+            portfolioData = data;
+            renderPortfolio('wedding'); // Default to wedding instead of all
+        })
+        .catch(error => console.error('Error loading portfolio data:', error));
+
+    // Portfolio Filtering
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Update active button
             filterBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-
             const filter = btn.getAttribute('data-filter');
-
-            portfolioItems.forEach(item => {
-                if (filter === 'all' || item.classList.contains(filter)) {
-                    item.style.display = 'block';
-                    setTimeout(() => {
-                        item.style.opacity = '1';
-                        item.style.transform = 'scale(1)';
-                    }, 0);
-                } else {
-                    item.style.opacity = '0';
-                    item.style.transform = 'scale(0.8)';
-                    setTimeout(() => {
-                        item.style.display = 'none';
-                    }, 400);
-                }
-            });
+            renderPortfolio(filter);
         });
     });
 
